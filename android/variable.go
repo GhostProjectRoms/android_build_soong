@@ -20,7 +20,7 @@ import (
 	"runtime"
 	"strings"
 
-	"paosp/soong/android"
+	"xenonhd/soong/android"
 
 	"github.com/google/blueprint/proptools"
 )
@@ -88,8 +88,8 @@ type variableProperties struct {
 			Cppflags []string
 		}
 
-		// include PornAOSP variables
-		Paosphd android.Product_variables
+		// include XenonHD variables
+		Xenonhd android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -156,8 +156,8 @@ type productVariables struct {
 
 	Override_rs_driver *string `json:",omitempty"`
 
-	// include PornAOSP variables
-	Paosphd android.ProductVariables
+	// include XenonHD variables
+	Xenonhd android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
